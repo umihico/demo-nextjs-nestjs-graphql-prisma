@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:  
+  remote:
+    build:
+      context: .
+      dockerfile: .devcontainer/Dockerfile 
+    volumes:
+      - ./:/workspaces/demo-nextjs-nestjs-graphql-prisma
+      - ~/.bashrc:/root/.bashrc
+      - ~/.gitconfig:/root/.gitconfig

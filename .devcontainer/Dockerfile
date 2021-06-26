@@ -15,3 +15,5 @@ RUN npm install -g @nestjs/cli serverless
 
 # [Optional] Uncomment if you want to install more global node packages
 # RUN su node -c "npm install -g <your-package-list -here>"
+# CMD [ "npm", "--prefix", "nest", "run", "start" ]
+CMD [ "sleep", "infinity" ]
