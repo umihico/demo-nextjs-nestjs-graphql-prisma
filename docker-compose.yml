@@ -16,3 +16,10 @@ services:
       - '2000:2000'
     volumes:
       - ./next:/app
+
+  nest:
+    build: nest
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./nest:/workspaces/nest
