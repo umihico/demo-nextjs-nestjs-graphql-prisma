@@ -5,8 +5,7 @@ ENV PORT 3000
 
 WORKDIR /app
 
-COPY package.json /app
-COPY yarn.lock /app
+COPY package.json package-lock.json /app/
 
 RUN yarn install --production
 
