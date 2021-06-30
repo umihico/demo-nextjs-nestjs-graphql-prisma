@@ -13,9 +13,11 @@ services:
   next:
     build: next
     ports:
-      - '2000:2000'
+      - '80:2000'
     volumes:
       - ./next:/app
+    depends_on:
+      - nest
 
   nest:
     build: nest

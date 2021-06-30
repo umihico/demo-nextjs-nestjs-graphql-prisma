@@ -11,8 +11,6 @@ RUN yarn install --production
 
 COPY . /app
 
-RUN yarn build
-
 EXPOSE 2000
 
 CMD ["yarn", "dev", "--port", "2000"]
